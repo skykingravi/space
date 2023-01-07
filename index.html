@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/531820bc49.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="favicon/android-chrome-512x512.png">
+</head>
+
+<body id="body">
+    <nav class="navbar">
+        <span class="logo"><a href="#home">SPACE</a></span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu">
+            <input type="checkbox" class="menutoggle" id="menutoggle">
+            <div class="menulogo">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="menubar" id="menubar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <a class="btn" href="#contact">
+                <div class="cover"></div>
+                <span>Ask Here</span>
+            </a>
+        </ul>
+    </div>
+    <section class="page1" id="home">
+        <div class="blog">
+            <h1>UNIVERSE</h1>
+            <h4>In this vast space, Is it not careless to become too local when there are four hundred billion stars in
+                our galaxy alone ?
+            </h4>
+            <a class="btn" href="#explore">
+                <div class="cover"></div>
+                <span>Explore More</span>
+            </a>
+        </div>
+    </section>
+    <section class="page2" id="about">
+        <div class="blog">
+            <div class="earth"></div>
+            <h1>ABOUT</h1>
+            <h2>Hey Folks,</h2>
+            <h4>I am Ravi, an aspiring web developer based in Delhi, India. I am 19 yo and currently a sophomore at
+                NSUT,
+                Dwarka pursuing B.Tech. in Computer Science & Engineering. I have been making this website without using any frameworks (that's why it's a bit dodgy in layout), and the result is not bad at all. These
+                Space related stuff have always inspired me and made me more curious to find answers. I know many of you
+                can relate. This Website contains the information of all types of celestial bodies that exist in our
+                Universe.</h4>
+            <a class="btn" href="#contact">
+                <div class="cover"></div>
+                <span>Contact Me</span>
+            </a>
+        </div>
+    </section>
+    <section class="page3" id="explore">
+        <div class="blog">
+            <h1>EXPLORE</h1>
+            <h2>Our Universe has an unimaginably huge collection of celestial bodies. Some of those bodies are -</h2>
+        </div>
+        <div class="collection">
+            <a href="https://en.wikipedia.org/wiki/Black_hole" title="Click to view more" target="_blank" class="blackhole cbody"></a>
+            <a href="https://en.wikipedia.org/wiki/Nebula" title="Click to view more" target="_blank" class="nebula cbody"></a>
+            <a href="https://en.wikipedia.org/wiki/Galaxy" title="Click to view more" target="_blank" class="galaxy cbody"></a>
+            <a href="https://en.wikipedia.org/wiki/Star" title="Click to view more" target="_blank" class="star cbody"></a>
+            <a href="https://en.wikipedia.org/wiki/Planet" title="Click to view more" target="_blank" class="planet cbody"></a>
+            <a href="https://en.wikipedia.org/wiki/Natural_satellite" title="Click to view more" target="_blank" class="moon cbody"></a>
+            <a href="https://en.wikipedia.org/wiki/Comet" title="Click to view more" target="_blank" class="comet cbody"></a>
+            <a href="https://en.wikipedia.org/wiki/Asteroid" title="Click to view more" target="_blank" class="asteroid cbody"></a>
+        </div>
+    </section>
+    <section class="page4" id="contact">
+        <h1>CONTACT</h1>
+        <div class="boxes">
+            <div class="box1">
+                <h2>General</h2>
+                <div class="data data1">
+                    <span>Address</span>
+                    <h4>Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678</h4>
+                </div>
+                <div class="data data2">
+                    <span>Phone</span>
+                    <h4>+91 xxxx-nnnnnn</h4>
+                </div>
+                <div class="data data3">
+                    <span>Email</span>
+                    <h4>peter.parker@zylker.com</h4>
+                </div>
+            </div>
+            <div class="box2">
+                <h2>Social</h2>
+                <a href="https://www.linkedin.com/in/ravi-meena-85902922b/" class="data data1" target="_main"
+                    title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Ravi2893" class="data data2" target="_main"><i class="fa-brands fa-github"
+                        title="Github"></i></a>
+                <a href="https://twitter.com/RaviMee66886574" class="data data3" target="_main" title="Twitter"><i
+                        class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="formopen" id="formopen">
+            <h2>DM Here</h2>
+        </div>
+    </section>
+    <div class="contactform" id="contactform">
+        <div class="formtoggle" id="formclose">
+            <span></span>
+            <span></span>
+        </div>
+        <form action="mailto:amiableravi2893@gmail.com" method="post" enctype="text/plain" target="_main">
+            <label for="name"><span>Name</span></label>
+            <input type="text" name="name" id="name" maxlength="30">
+            <label for="email"><span>Email</span></label>
+            <input type="email" name="email" id="email" maxlength="30">
+            <label for="message"><span>Message</span></label>
+            <input type="text" name="message" id="message" maxlength="1000">
+            <div class="submitbox">
+                <input type="submit">
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
